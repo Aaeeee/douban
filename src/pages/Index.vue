@@ -42,6 +42,7 @@ export default {
     return {
       select: 'tab1'
     }
+    ,
   }
 }
 </script>
@@ -74,6 +75,7 @@ export default {
           font-size: 10px;
           color:#949494;
       }
+
       &.is-active{
           .m-tabbar-item-text{
               color: #42bd56;
