@@ -13,7 +13,6 @@
   </header>
 </template>
 <script>
-  
 </script>
 <style lang="scss" scoped>
 @import url('../assets/less/var.less');
@@ -37,8 +36,8 @@
     }
 }
 .head {
-    width: 100%;
-    height: 2rem;    
+  width: 100%;
+  height: 2rem;
 }
 .header {
     width: 100%;
@@ -56,5 +55,3 @@
   font-size: 1.4rem;
 }
 </style>
-
-

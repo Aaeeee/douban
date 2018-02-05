@@ -42,7 +42,6 @@ export default {
     return {
       select: 'tab1'
     }
-    ,
   }
 }
 </script>
