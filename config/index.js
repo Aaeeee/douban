@@ -10,7 +10,6 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -40,7 +39,16 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true
+    cssSourceMap: true,
+    proxyTable: {
+      '/api': {
+        target: 'https://api.douban.com',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': '/v2'
+        }
+      }
+    }
   },
 
   build: {
